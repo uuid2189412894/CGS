@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinaman Gore Systems</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+  .h-16 
+  {
+    height:9rem !important;
+  }
+  .h-12
+  {
+    height:8rem !important;
+  }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#003366] text-white shadow-lg fixed w-full top-0 z-50 border-b-4 border-[#CC0000]">
+    <div class="max-w-7xl mx-auto flex items-center justify-between h-16 px-1">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="CGS_Logo.jpg" alt="Chinaman Gore Systems Logo" class="h-12 w-auto">
+        <span class="font-extrabold text-lg tracking-wider">Chinaman Gore Systems</span>
+      </div>
+      <!-- Nav -->
+      <nav class="hidden md:flex space-x-8 font-semibold uppercase">
+        <a href="#home" class="hover:text-[#CC0000]">Home</a>
+        <a href="#services" class="hover:text-[#CC0000]">Services</a>
+        <a href="#safety" class="hover:text-[#CC0000]">Safety</a>
+        <a href="#projects" class="hover:text-[#CC0000]">Projects</a>
+        <a href="#contact" class="hover:text-[#CC0000]">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+
+  <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+  
+  <!-- Blurred Background -->
+  <img src="banner.jpg" 
+       alt="Construction site blurred" 
+       class="absolute inset-0 w-full h-full object-cover blur-lg scale-110" />
+
+  <!-- Foreground Image (object-contain) -->
+  <img src="banner.jpg" 
+       alt="Construction site main" 
+       class="absolute inset-0 w-full h-full object-contain z-10" />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40 z-20"></div>
+
+  <!-- Text Content -->
+  <div class="relative text-center px-6 z-30">
+    <h1 class="text-5xl font-extrabold text-white uppercase drop-shadow-lg">
+      Chinaman Gore Systems
+    </h1>
+    <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-200">
+      Precision engineering with risk at the core. Steel, concrete, and the red edge of danger.
+    </p>
+    <a href="#services" 
+       class="mt-8 inline-block bg-[#CC0000] text-white px-8 py-3 rounded-lg font-bold uppercase border-2 border-white hover:bg-red-700 transition">
+      Explore Services
+    </a>
+  </div>
+</section>
+
+
+  <!-- Services -->
+  <section id="services" class="py-20 bg-gray-200 border-t-8 border-[#003366]">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-[#003366] mb-10 uppercase">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white border-2 border-[#003366] p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-xl font-bold mb-4 text-[#CC0000]">High-Rise Construction</h3>
+          <p>Rising higher with every floor. Safety systems in place — but limits are always tested.</p>
+        </div>
+        <div class="bg-white border-2 border-[#003366] p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-xl font-bold mb-4 text-[#CC0000]">Demolition</h3>
+          <p>Controlled collapse. Concrete falls, sparks fly, danger is always part of the plan.</p>
+        </div>
+        <div class="bg-white border-2 border-[#003366] p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
+          <h3 class="text-xl font-bold mb-4 text-[#CC0000]">Hazard Systems</h3>
+          <p>Living with risk, engineering around chaos, ensuring the work never stops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety -->
+  <section id="safety" class="bg-[#003366] text-white text-center py-12 border-t-4 border-[#CC0000] border-b-4">
+    <h3 class="text-2xl md:text-3xl font-extrabold uppercase tracking-widest">
+      ⚠ Safety First… But Never Absolute ⚠
+    </h3>
+  </section>
+
+  <!-- Projects -->
+<section id="projects" class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-[#003366] mb-10 uppercase">Recent Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Project Video 1 -->
+      <div class="relative group">
+        <video 
+          src="1.mp4" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          class="w-full h-auto rounded-lg shadow-lg group-hover:brightness-75 transition">
+        </video>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/70 text-[#CC0000] text-xl font-bold transition">
+          Tower – 90 Floors
+        </div>
+      </div>
+
+      <!-- Project Video 2 -->
+      <div class="relative group">
+        <video 
+          src="2.mp4" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          class="w-full h-auto rounded-lg shadow-lg group-hover:brightness-75 transition">
+        </video>
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/70 text-[#CC0000] text-xl font-bold transition">
+          Restricted Demolition Zone
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-[#003366] text-gray-200 text-sm py-6 border-t-4 border-[#CC0000]">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between">
+      <span>© 2025 Chinaman Gore Systems | Engineered in Risk</span>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-[#CC0000]">Privacy</a>
+        <a href="#" class="hover:text-[#CC0000]">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Contact Modal -->
+<div id="contactModal" class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50" onclick="outsideClick(event)">
+  <div class="bg-[#003366] rounded-xl shadow-2xl p-10 relative max-w-3xl w-full text-center" onclick="event.stopPropagation();">
+    
+    <!-- Close Button -->
+    <button onclick="toggleModal()" class="absolute top-4 right-4 text-white hover:text-[#CC0000] text-4xl">&times;</button>
+
+    <h2 class="text-3xl font-extrabold text-white mb-10 uppercase">Connect With Us</h2>
+
+    <!-- Icon Links -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-10 justify-center">
+      
+      <!-- DexScreener -->
+      <a href="https://dexscreener.com/yourpage" target="_blank" class="group">
+        <img src="21400380-5c87-49d8-ac0b-17aabf4dea3d.png" alt="DexScreener" 
+             class="w-24 h-24 mx-auto opacity-80 group-hover:opacity-100 group-hover:scale-110 transition transform">
+      </a>
+
+      <!-- X.com -->
+      <a href="https://x.com/yourpage" target="_blank" class="group">
+        <img src="af383a4a-cd51-41ee-b6e5-cb3fb2edde4b.png" alt="X.com" 
+             class="w-24 h-24 mx-auto opacity-80 group-hover:opacity-100 group-hover:scale-110 transition transform">
+      </a>
+
+      <!-- Pump.fun -->
+      <a href="https://pump.fun/yourpage" target="_blank" class="group">
+        <img src="2811c000-fc62-4cfe-82b0-4ba15173d23a.jpg" alt="Pump.fun" 
+             class="w-24 h-24 mx-auto opacity-80 group-hover:opacity-100 group-hover:scale-110 transition transform">
+      </a>
+
+      <!-- Telegram -->
+      <a href="https://t.me/yourpage" target="_blank" class="group">
+        <img src="6516620e-8b31-44b3-babf-f48726e2d1d6.png" alt="Telegram" 
+             class="w-24 h-24 mx-auto opacity-80 group-hover:opacity-100 group-hover:scale-110 transition transform">
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleModal() {
+    document.getElementById('contactModal').classList.toggle('hidden');
+  }
+
+  function outsideClick(event) {
+    const modal = document.getElementById('contactModal');
+    if (event.target === modal) {
+      toggleModal();
+    }
+  }
+
+  // Attach click to Contact nav
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href="#contact"]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        toggleModal();
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>
